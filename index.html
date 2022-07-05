@@ -8,35 +8,51 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
     <link rel="stylesheet" media="screen" href="assets/css/style.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/ac77fb1b0f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--container start-->
     <div class="container">
-      <!--header section start-->
-      <header>
-        <div class="wrapper">
-          <div class="header">
-            <nav>
-              <ul>
-                <li><a href="index.html" title="Home"  class="active">home</a></li>
-                <li><a href="#FIXME" title="Work">work</a></li>
-                <li><a href="#FIXME" title="Blog">blog</a></li>
-                <li><a href="#FIXME" title="About Us">about us</a></li>
-              </ul>
-            </nav>
-            <ul class="slider">
-              <li class="active"><img src="https://dummyimage.com/340x540/93ed15/020d04&text=Slider+Image-1" alt="Slider Image-1"></li>
-              <li><img src="https://dummyimage.com/340x540/93ed15/020d04&text=Slider+Image-2" alt="Slider Image-2"></li>
-              <li><img src="https://dummyimage.com/340x540/93ed15/020d04&text=Slider+Image-3" alt="Slider Image-3"></li>
-              <li><img src="https://dummyimage.com/340x540/93ed15/020d04&text=Slider+Image-4" alt="Slider Image-4"></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <!--header section ends-->
       <!--main section start-->
       <main>
+        <!-- tab section start-->
+        <div class="tab-navigation">
+          <ul class="images" >
+            <li data-filter="home">
+              <img src="assets/Images/home.jpg" alt="" class="image">
+            </li>
+            <li data-filter="work">
+              <img src="assets/Images/work.jpg" alt="" class="image">
+            </li>
+            <li data-filter="blog">
+              <img src="assets/Images/blog.jpg" alt="">
+            </li>
+            <li data-filter="about">
+              <img src="assets/Images/about.jpg" alt="">
+            </li>
+          </ul>
+          <nav>
+            <ul class="links">
+              <li data-filter="home" class="active">
+                <a href="#FIXME" class="home">home</a>
+                <a href="#FIXME">Home</a>
+              </li>
+              <li data-filter="work">
+                <a href="#FIXME" class="work">Work</a>
+                <a href="#FIXME">Work</a>
+              </li>
+              <li data-filter="blog">
+                <a href="#FIXME" class="blog">home</a>
+                <a href="#FIXME">Blog</a>
+              </li>
+              <li data-filter="about">
+                <a href="#FIXME" class="about">about</a>
+                <a href="#FIXME">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- tab section end-->
       </main>
       <!--main section end-->
       <!--footer section start-->
@@ -45,6 +61,6 @@
       <!--footer section end-->
     </div>
     <!--container end-->
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
