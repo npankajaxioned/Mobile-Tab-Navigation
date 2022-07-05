@@ -164,21 +164,21 @@ nav li a:nth-child(1)::before {
 
 nav li a:nth-child(2)::before {
   border-radius: 50%;
-  content: '\f015'; 
+  content: '\f0b1'; 
   font-family: "fontAwesome";
   font-size: 17px;
 }
 
 nav li a:nth-child(3)::before {
   border-radius: 50%;
-  content: '\f015'; 
+  content: '\f518'; 
   font-family: "fontAwesome";
   font-size: 17px;
 }
 
 nav li a:nth-child(4)::before {
   border-radius: 50%;
-  content: '\f015'; 
+  content: '\f2bb'; 
   font-family: "fontAwesome";
   font-size: 17px;
 }
