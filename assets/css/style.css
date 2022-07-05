@@ -40,7 +40,9 @@ input[type='radio'] { vertical-align: text-bottom; }
 label,
 input[type='button'],
 input[type='submit'],
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
 strong {
   font-weight: bold;
@@ -94,29 +96,114 @@ li {
   display: inline-block;
   list-style-type: none;
 }
-/* Common styling */
-.grey { color: #666; }
-.cap { text-transform: capitalize; }
-.up { text-transform: uppercase; }
-.center { text-align: center; }
-.bold { font-weight: bold; }
-.transition { transition: 1s all ease; }
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1350px;
-  width: 86%; 
+
+  max-width: 1360px;
+  width: 26.62%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header{  
+  height: 100vh;
+  background-color: #b88acb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.header{
+  border: 3px solid #fff;
+  border-radius: 15px;
+  position: relative;  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
 
+/* navbar styling started */
 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 
+nav li {
+  flex-basis: 25%;
+  text-align: center;
+}
 
+nav {
+  font-size: 12px;
+  background-color: #fff;
+}
 
+nav a {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  color: #777777;
+  text-transform: capitalize;
+}
+nav a:hover{
+  color: #8e44ad;
+}
+.active{
+  color: #8e44ad;
+}
+
+nav li a:nth-child(1)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+
+nav li a:nth-child(2)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+
+nav li a:nth-child(3)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+
+nav li a:nth-child(4)::before {
+  border-radius: 50%;
+  content: '\f015'; 
+  font-family: "fontAwesome";
+  font-size: 17px;
+}
+.slider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.slider li{
+  /* display: none; */
+  width: 0;
+  height: 0;
+  transform: scale(0);
+  transition: opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider li.active {
+  /* display: block; */
+  width: auto;
+  height: auto;
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+/* navbar styling ended */
 /*=================================
   Header styling ends here
 =================================*/  
